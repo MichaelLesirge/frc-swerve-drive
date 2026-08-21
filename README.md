@@ -1,7 +1,7 @@
 
 # FRC Swerve Project [![CI](https://github.com/MichaelLesirge/frc-swerve-drive/actions/workflows/main.yml/badge.svg)](https://github.com/MichaelLesirge/frc-swerve-drive/actions/workflows/main.yml)
 
-This is a template FRC swerve drive implementation with simulation support and hardware support for both SparkMax and TalonFX motor controllers. It was developed by Team 8032 as a base for our robots, but is optionally open for use by any team. Used in our [2025 codebase](https://github.com/redshiftrobotics/reefscape-2025).
+This is a template FRC swerve drive implementation with simulation support and hardware support for both SparkMax and TalonFX motor controllers. Used by FRC team 8032 as the template for our [2025 Reefscape](https://github.com/redshiftrobotics/reefscape-2025) and 2026 Rebuilt robot codebases.
 
 ![Simulation of PathPlanner auto](https://github.com/user-attachments/assets/c266b861-9b09-45b3-a346-0fe8aa7c53b7)
 
@@ -9,7 +9,7 @@ This is a template FRC swerve drive implementation with simulation support and h
 
 <img width="500" align="right" alt="IO layer diagram" src="https://github.com/user-attachments/assets/4af16fb7-9e0d-4936-b4a5-197d76bf141f" />
 
-Simulated and hardware implementations with same codebase using [AdvantageKit](https://docs.advantagekit.org/data-flow/recording-inputs/io-interfaces) style IO layers and logging.
+Uses dependency-injection based architecture so that business logic, logging, and robot visualization can run identically in both simulation and on Rev's and CTRE's motor controllers and encoders.
 
 <ol>
   <li>Drive subsystem handles kinematics and odometry. Converts desired speeds to module states. Converts gyroscope data and module positions to chassis position.</li>
@@ -85,3 +85,8 @@ https://github.com/user-attachments/assets/a532b2e0-d504-4c33-b588-d6f033edd90e
 
 ![Swerve chassis drifting](https://github.com/user-attachments/assets/b156eef3-841b-4bfa-a985-819c8c37144b)
 ![Swerve chassis on side](https://github.com/user-attachments/assets/cc41ea92-382c-4d3a-8fee-30db69363e1f)
+
+See the [2025 Reefscape](https://github.com/redshiftrobotics/reefscape-2025) repository for more usages 
+
+https://github.com/user-attachments/assets/939ff323-dfbc-4b03-a983-78f02153d8be
+
